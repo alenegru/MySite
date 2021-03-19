@@ -5,6 +5,27 @@ body {
 	height: 100vh;
 }
 
+section {
+	height: 100vh;
+	position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  /* For mobile phones: */
+	body {
+		/*min-height: 100vh;*/
+  		/*min-height: -webkit-fill-available;*/
+	}
+
+	html {
+		/*height: -webkit-fill-available;*/
+	}
+
+	section {
+		max-height: 800px;
+	}
+}
+
 .container {
 	position: relative;
 	width: 100%;
@@ -27,16 +48,19 @@ h3 {
 	font-family: "Montserrat", sans-serif;
 }
 
-section {
-	height: 100vh;
-}
-
 .skills {
+	margin: 0 auto;
 }
 
 .profile {
-	margin: auto 0;
-	margin-bottom: 100px;
+	margin: 50px auto 68px;
+}
+
+.scroll-To {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 100px;
 }
 
 .down-arrow {
@@ -50,7 +74,7 @@ section {
 }
 
 .skill-row {
-	margin: 100px auto;
+	margin: 50px auto;
 	width: 50%;
 	text-align: left;
 	line-height: 2;
@@ -97,6 +121,10 @@ section {
 
 .contact-message {
 	margin: 60px auto 150px;
+}
+
+.second-arrow {
+	bottom: 55px;
 }
 
 .email-btn {
